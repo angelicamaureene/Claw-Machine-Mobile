@@ -128,4 +128,31 @@ dialog{
 }
 @keyframes pop{from{transform:scale(.8);opacity:0;}to{transform:scale(1);opacity:1;}}
 
+/* 🔁 Responsive layout on mobile */
+@media (max-width: 600px) {
+  #claw-machine {
+    transform: scale(0.75);
+    transform-origin: top left;
+  }
+
+  #drop-btn {
+    font-size: 1rem;
+    padding: 8px 14px;
+  }
+
+  dialog {
+    max-width: 90vw;
+  }
+
+  .ball {
+    width: 34px;
+    height: 34px;
+    font-size: 1.1rem;
+  }
+
+  .ball::after {
+    font-size: 1rem;
+  }
+}
+
 
