@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Claw Machine Love Notes</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <h1 class="title"> Claw Machine for my love (intended to claw at your heart)</h1>
+
+    <div id="game">
+      <div id="rail">
+        <div id="claw">
+          <div class="prong left"></div>
+          <div class="prong right"></div>
+        </div>
+      </div>
+
+      <!-- This fills the cabinet space; balls stay inside it -->
+      <div id="ball-area"></div>
+
+      <div id="bin"></div>
+    </div>
+
+    <button id="drop-btn">Drop ⬇️</button>
+
+    <!-- Message modal -->
+    <dialog id="msg-modal">
+      <p id="msg-text"></p>
+      <button id="close-btn">Close</button>
+    </dialog>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
